@@ -6,8 +6,8 @@ import "@/styles/globals.css";
 
 import { Metadata } from "next";
 
-
 import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,9 +24,15 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body className={cn("h-screen", inter.className)}>
-        <Navbar />
-        <main className="container mx-auto h-[90vh]">{children}</main>
-        
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          <main className="container mx-auto h-[90vh]">{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );

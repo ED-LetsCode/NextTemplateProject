@@ -23,6 +23,7 @@ import {
   LogOut,
   LucideProps,
   Mail,
+  Menu,
   MessageSquare,
   Minus,
   Moon,
@@ -34,6 +35,7 @@ import {
   RotateCcw,
   ScrollText,
   SendIcon,
+  Settings,
   ShoppingBag,
   ShoppingCart,
   Sun,
@@ -42,6 +44,8 @@ import {
 } from "lucide-react";
 
 export const Icons = {
+  menu: Menu,
+  settings: Settings,
   qrCode: QrCode,
   files: Files,
   lock: Lock,
@@ -108,5 +112,5 @@ export const Icons = {
       />
       <path d="M1 1h22v22H1z" fill="none" />
     </svg>
-  )
+  ),
 };
