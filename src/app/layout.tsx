@@ -6,14 +6,30 @@ import "@/styles/globals.css";
 
 import { Metadata } from "next";
 
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Template | Next.js",
+const siteConfig = {
+  name: "Template",
   description: "Template for Next.js",
+};
+
+export const metadata: Metadata = {
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  // Favicons
+  icons: [
+    {
+      url: "/logo.svg",
+      href: "/logo.svg",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -32,6 +48,7 @@ export default function RootLayout({
         >
           <Navbar />
           <main className="container mx-auto h-[90vh]">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

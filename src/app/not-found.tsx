@@ -1,37 +1,39 @@
 import Link from "next/link";
 
+import { Button } from "@/components/ui/button";
 // import {
 //   Card,
 //   CardDescription,
 //   CardFooter,
 //   CardHeader,
 //   CardTitle,
-// } from "@/components/ui/Card";
+// } from "@/components/ui/card";
 import { Icons } from "@/components/Icons";
+
+import { getPath } from "@/lib/utils";
 
 const Page = () => {
   return (
-    <div className="flex h-full items-center justify-center">
-      {/* <Card className="w-[500px]">
-    <CardHeader>
-      <CardTitle className="mb-4 flex items-center justify-center">
-        <Icons.ban className="mr-2 h-6 w-6 " />
-        Nicht gefunden (404)
-      </CardTitle>
-      <CardDescription className="text-center">
-        Die angeforderte Seite konnte nicht gefunden werden.
-      </CardDescription>
-    </CardHeader>
+    <div className="flex h-[85vh] items-center justify-center">
+      {/* <Card className="max-w-[500px]">
+        <CardHeader>
+          <CardTitle className="mb-4 flex items-center justify-center">
+            Not Found (404)
+          </CardTitle>
+          <CardDescription className="text-center">
+            The requested page could not be found.
+          </CardDescription>
+        </CardHeader>
 
-    <CardFooter> */}
-      <Link
-        href="/"
-        className="text-md w-[500px] rounded-md border bg-primary px-4 py-2 text-center text-primary-foreground hover:bg-primary/90"
-      >
-        Zurück zur Startseite
-      </Link>
-      {/* </CardFooter>
-  </Card> */}
+        <CardFooter>
+          <Button asChild className="w-full">
+            <Link href={getPath("")}>
+              <Icons.arrowLeft className="mr-2 h-4 w-4" />
+              Go back
+            </Link>
+          </Button>
+        </CardFooter>
+      </Card> */}
     </div>
   );
 };

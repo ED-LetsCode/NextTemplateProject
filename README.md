@@ -1,10 +1,10 @@
 # NextJS Template Project 🚀
 
-A Next.js 13 template for building apps. The Goal is to have a template that is easy to use and has all the features you need to build a WebApp as fast as possible.
+A Next.js 14 template for building apps. The Goal is to have a template that is easy to use and has all the features you need to build a WebApp as fast as possible.
 
 ## Features
 
-- Next.js 13
+- Next.js 14
 - TypeScript
 - Tailwind CSS
 - Prisma

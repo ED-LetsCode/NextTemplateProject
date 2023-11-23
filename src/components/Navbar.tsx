@@ -44,7 +44,7 @@ const Navbar = async () => {
       <div className="container mx-auto flex items-center justify-between">
         {/* LOGO */}
         <Link href={getPath("")} className="flex items-center space-x-2">
-          <div className=" font-bold">YOUR_LOGO</div>
+          <div className=" font-bold">YOURE_LOGO</div>
         </Link>
 
         {/* NAVBAR ITEMS */}
