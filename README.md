@@ -8,7 +8,6 @@ A Next.js 14 template for building apps. The Goal is to have a template that is 
 - TypeScript
 - Tailwind CSS
 - Prisma
-- Winston Logger
 - Prettier
 - Zod Schema Validation
 - Ts-doc Summary Documentation
