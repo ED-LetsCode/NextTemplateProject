@@ -10,8 +10,6 @@ A Next.js 14 template for building apps. The Goal is to have a template that is 
 - Prisma
 - Prettier
 - Zod Schema Validation
-- Ts-doc Summary Documentation
-- Zustand State Library
 
 ## Getting Started
 
@@ -33,9 +31,6 @@ Preview project:
 
 Run production build:
 ➡️ npm run start
-
-Generate documentation:
-➡️ npm run generate-docs
 
 Check typescript types:
 ➡️ npm run typecheck
